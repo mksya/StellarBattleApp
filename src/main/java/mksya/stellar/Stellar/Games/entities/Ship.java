@@ -26,6 +26,9 @@ public class Ship {
     @Column
     private boolean sunk;
 
+    @Column
+    private boolean positionNotAvailable;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "player_id", referencedColumnName = "id")
     private Player player;

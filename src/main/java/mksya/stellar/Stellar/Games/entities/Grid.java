@@ -5,12 +5,14 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
 @Table(name = "grid")
 public class Grid {
 
-    Spot[][] grid;
+   List<Spot> spots;
 
 }
